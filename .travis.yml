@@ -22,6 +22,6 @@ after_success:
   - docker push rachitachittal/multi-client
   - docker push rachitachittal/multi-nginx
   - docker push rachitachittal/multi-server
--  docker push rachitachittal/multi-worker
+  - docker push rachitachittal/multi-worker
 
 
