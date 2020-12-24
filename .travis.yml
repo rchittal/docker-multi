@@ -1,3 +1,4 @@
+language: generic
 sudo: required
 services:
   - docker
@@ -17,7 +18,7 @@ after_success:
 #Login in to the docker CLI
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
-#take those images and push them to docker hub
+#take those images and push them to dockerhub
 - docker push rachitachittal/multi-client
 - docker push rachitachittal/multi-nginx
 - docker push rachitachittal/multi-server
